@@ -427,6 +427,7 @@ body {
     .main-footer {
         display: grid;
         grid-template-columns: 18.75rem 17.5rem 17.5rem 18.75rem;
+        grid-row: 100%;
     }
     
     .main-footer-first-column {
