@@ -120,7 +120,7 @@ body {
 }
 
 .main-content {
-    background-image: url(/images/bg-curve-mobile.svg);
+    background-image: url(images/bg-curve-mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
