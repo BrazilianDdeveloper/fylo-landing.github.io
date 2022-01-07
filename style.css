@@ -1,0 +1,474 @@
+/*General specifications*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.blue-submit-button {
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.blue-submit-button:hover {
+    background-color: hsl(224, 92%, 66%);;
+}
+
+.form-header .blue-submit-button, .get-early-access .blue-submit-button {
+    cursor: pointer;
+}
+
+.general-title {
+    font-family: 'Raleway', sans-serif, Arial, Helvetica;
+}
+
+.main-footer li a:hover {
+    color: hsla(224, 93%, 58%, 0.8);
+}
+
+.social-media-footer a svg:hover {
+   fill: hsla(224, 93%, 58%, 0.8);;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif, Helvetica;
+    font-weight: 400;
+}
+
+/*Active States*/
+
+.header-bottom-field .form-header .email-field-top:invalid {
+    border: 1px solid red;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.main-nav, .main-nav ul{
+  padding: 0;
+}
+
+.main-nav ul li {
+    margin-top: 2rem
+}
+
+.main-nav ul li:not(:first-child){
+    float: right;
+    margin: 0 3.8% 0 0;
+}
+
+.main-nav ul li img{
+    height: 2rem;
+    float: left;
+    margin: -0.5rem 0 0 4%;
+}
+
+.header-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.header-image {
+    width: 19rem;
+    margin-top: 4rem;
+}
+
+.main-title {
+    font-size: 1.65rem;
+}
+
+.sub-title {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0 4%;
+}
+
+.form-header {
+    margin: 1rem 0 5rem 0;
+}
+
+.email-field-top {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80vw;
+    padding: 0.80rem 0 0.80rem 1.25rem;
+    box-sizing: border-box;
+}
+
+.form-header .blue-submit-button {
+    margin-top: 1.25rem;
+    width: 80vw;
+    padding: 0.80rem 0;
+}
+
+.main-content-top-image {
+    width: 19rem;
+}
+
+.main-content {
+    background-image: url(../images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 8rem;
+}
+
+.stay-productive, .get-early-access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stay-productive .general-title {
+    margin-top: 4rem;
+}
+
+.paragraph-below-first-title {
+    text-align: left;
+    padding: 0 2% 0 3%;
+}
+
+.stay-productive-call-action {
+    color: hsl(170, 45%, 43%);
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+    margin-bottom: 3rem;
+    width: 11rem;
+}
+
+.stay-productive-call-action:hover #paint, .stay-productive-call-action:hover {
+    fill: rgb(142, 243, 243);
+    color: rgb(142, 243, 243);
+    border-color: rgb(142, 243, 243);
+}
+
+.stay-productive :first-child {
+    margin: 0 0 -0.15rem .4rem;
+}
+
+.main-content-testimonial {
+    width: 78vw;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    margin-bottom: 3rem;
+    background-color: white;
+}
+
+.testimonial-paragraph {
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.avatar-testimonial {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    float: left;
+    margin-right: 0.6rem;
+}
+
+.main-content-testimonial .name-and-charge {
+    margin-top: 1rem;
+    line-height: 1;
+}
+
+.main-content-testimonial .name-and-charge p:first-child {
+    font-size: 0.9rem;
+}
+
+.main-content-testimonial .name-and-charge p:nth-child(2) {
+    margin-left: 2.95rem;
+    font-size: 0.6rem;
+    color: hsl(238, 22%, 44%);
+}
+
+.get-early-access {
+    box-sizing: border-box;
+    padding: 4rem 2.5rem 6rem 2.5rem;
+    text-align: center;
+    background-color: hsla(238, 22%, 44%, 0.9);
+}
+
+.get-early-access .general-title{
+    font-size: 2rem;
+    color: white;
+}
+
+.get-early-paragraph {
+    color: hsl(240, 75%, 98%);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.get-early-access input[type="email"] {
+    width: 80vw;
+    height: 3rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+}
+
+.get-early-access input[type="submit"] {
+    margin-top: 0.75rem;
+    width: 80vw;
+    border-radius: none;
+    padding: 0.75rem;
+}
+
+.main-footer {
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(240, 75%, 98%);
+    padding: 6rem 0 4rem 4rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.main-footer a {
+    color: hsl(240, 75%, 98%);
+}
+
+.main-footer ul {
+    margin: 0;
+    padding: 0;
+    line-height: 2.5;
+}
+
+.main-footer address {
+    margin: 2.5rem 0 2rem 0;
+}
+
+.main-footer address img {
+    margin-right: 1.25rem;
+}
+
+.main-footer .about-top-left {
+    margin-bottom: 3rem;
+}
+
+.social-media-footer{
+    align-self: center;
+    /*Padding-left= -2rem is to clean de distorion caused by de padding-left on main-footer*/
+    margin: 2rem 0 0 -4rem;
+}
+
+/*Media queries*/
+
+/*Suporting galaxy fold*/
+
+@media (max-width: 18rem) {
+
+    .header-image {
+        width: 16rem;
+    }
+
+    .main-content-top-image {
+        width: 16rem;
+    }
+
+}   
+
+/*Desktop version*/
+
+@media (min-width: 72rem) {
+
+    .header-bottom {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .header-bottom .header-image {
+        order: 1;
+        margin-right: 4rem;
+        width: 34rem;
+    }
+
+    .main-content {
+        margin-top: 8rem;
+    }
+
+    .main-title {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .sub-title {
+        padding: 0;
+    }
+
+    .header-bottom-field {
+        width: 40vw;
+        margin-left: 3rem;
+    }
+
+    .form-header {
+        position: relative;
+        margin-right: 0;
+    }
+
+    .form-header .email-field-top {
+        width: 22vw;
+        float: left;
+    }
+
+    .form-header .blue-submit-button {
+        width: 15vw;
+        position: absolute;
+        left: 58%;
+        top: -1.20rem;
+    }
+
+    .header-bottom .main-title {
+        order: 1;
+        text-align: left;
+    }
+
+    .header-bottom .sub-title {
+        text-align: left;
+        padding: 0;
+    }
+
+    .stay-productive {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 7rem 6rem 2rem 9rem 5rem;
+        padding-left: 2rem;
+        height: 40rem;
+    }
+
+    .stay-productive .main-content-top-image {
+        width: 34rem;
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+        margin-left: 1%;
+        margin-top: 6rem;
+    }
+
+    .stay-productive .general-title {
+        margin-top: 4rem;
+        margin-left: 1rem;
+        font-size: 2.5rem;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .stay-productive .paragraph-below-first-title:nth-of-type(1) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .stay-productive .paragraph-below-first-title:nth-of-type(2) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    } 
+
+    .stay-productive-call-action {
+        grid-row: 4 / 5;
+        margin-left: 1rem;
+    }
+
+    .main-content-testimonial {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        margin-top: 4rem;
+        margin-left: 1rem;
+        width: 22rem;
+    }
+
+    .get-early-access {
+        flex-direction: row;
+        text-align: left;
+        padding-left: 5rem;
+    }
+
+    .get-early-top-content {
+        width: 40%;
+    }
+
+    .get-early-access-form {
+        width: 10%;
+        margin-left: 10rem;
+    }
+
+    .get-early-access input[type="email"] {
+        width: 35vw;
+        height: 3rem;
+        padding-left: 1rem;
+        margin-top: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .get-early-access input[type="submit"] {
+        margin-top: 0.75rem;
+        width: 18vw;
+        border-radius: none;
+        padding: 0.75rem 0;
+    }
+
+    .main-footer {
+        display: grid;
+        grid-template-columns: 18.75rem 17.5rem 17.5rem 18.75rem;
+    }
+
+    .about-top-left li:first-child {
+        margin-top: 5rem;
+    }
+
+    .about-top-left li {
+        margin-left: 7rem;
+    }
+
+    .about-bottom-right li:first-child {
+        margin-top: 5rem;
+    }
+
+    .about-bottom-right li {
+        margin-left: 5rem;
+    }
+
+    .social-media-footer {
+        margin-left: 5rem;
+        margin-top: -5rem;
+    }
+
+    .social-media-footer a {
+        margin-left: 0.5rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
