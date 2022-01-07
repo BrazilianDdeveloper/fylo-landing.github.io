@@ -428,6 +428,22 @@ body {
         display: grid;
         grid-template-columns: 18.75rem 17.5rem 17.5rem 18.75rem;
     }
+    
+    .main-footer-first-column {
+        grid-column: 1 / 2;
+    }
+
+    .about-top-left {
+        grid-column: 2 / 3;
+    }
+
+    .about-bottom-right {
+        grid-column: 3 / 4;
+    }
+
+    .social-media-footer {
+        grid-column: 4 / 5;
+    }
 
     .about-top-left li:first-child {
         margin-top: 5rem;
