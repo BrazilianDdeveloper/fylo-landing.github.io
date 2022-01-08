@@ -2,5 +2,5 @@ A fictional Landing Page that I built with HTML5 and CSS3, i got this idea from:
 
 My improvements:
 
-- I'm getting beter at Flexbox
+- I'm getting better at Flexbox
 - I used CSS Grid to build my website footer
